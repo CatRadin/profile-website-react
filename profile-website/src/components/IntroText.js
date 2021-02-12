@@ -4,7 +4,7 @@ function IntroText() {
 
 return(
     <div class="header-middle-contaier">
-        <h2>Full Stack Web Developer</h2>
+        <h2>Full Stack Developer</h2>
     <h1><span class="cat">Catherine</span><br />Radin-Schneider</h1>
 <div class="please-work">
     
