@@ -80,7 +80,7 @@ select {
   align-items: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
-  color: white;
+  color: hsl(192, 17%, 99%);
   
 }
 .header-container {
@@ -93,14 +93,16 @@ select {
   background-repeat:   no-repeat;
   background-position: center center;
 }
+
 //NAV-----------------------------------------------------------------------
 .nav-Container{
   display: flex;
+  flex-direction: row;
   align-self: center;
 }
 
 .nav-Container a {
-  color: white;
+  color: hsl(192, 17%, 99%);
   text-decoration: none;
   font-size: 2rem;
   margin-top: -4rem;
@@ -115,6 +117,8 @@ select {
 }
 //IntroText------------------------------------------------------
   .header-middle-contaier {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-self: center;
     width: 60%;
@@ -165,12 +169,14 @@ select {
     letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 5.9rem;
+    padding-bottom: 1rem;
   
   }
   
   .header-middle-contaier h1 .cat {
-    font-size: 8.5rem;
+    font-size: 9.5rem;
     font-weight: 600;
+    
   }
   
   .header-middle-contaier p {
@@ -186,17 +192,80 @@ select {
     }
     .grid-container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 0.4fr 0.4fr 1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr 1fr ;
       gap: 0px 0px;
       grid-template-areas:
-        "image-containter image-containter about about"
-        "image-containter image-containter about about"
-        "image-containter image-containter skills skills";
-        
+        "image-container image-container about about"
+        "image-container image-container about about "
+        "image-container image-container skills skills"
+        "image-container image-container skills skills";
+        height: 80vh;
+        width: 100vw;
     }
-    .image-containter { grid-area: image-containter; }
+    .image-container { grid-area: image-container; }
     .about { grid-area: about; }
     .skills { grid-area: skills; }
 
-    
+    .image-container {
+      background: black;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .me {
+      padding: 1rem;
+      height: 23rem;
+      width: 23rem;
+      
+    }
+
+    .skills {
+      background: #666666;
+      color: white
+    }
+
+    //STARS ------------------------------------------------------------------------------
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+.snow {
+  $total: 200;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: rgb(225, 206, 233);
+  border-radius: 50%;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001vw;
+    $random-offset: random_range(-100000, 100000) * 0.0001vw;
+    $random-x-end: $random-x + $random-offset;
+    $random-x-end-yoyo: $random-x + ($random-offset / 2);
+    $random-yoyo-time: random_range(30000, 80000) / 100000;
+    $random-yoyo-y: $random-yoyo-time * 100vh;
+    $random-scale: random(10000) * 0.0001;
+    $fall-duration: random_range(10, 30) * 1s;
+    $fall-delay: random(30) * -1s;
+
+    &:nth-child(#{$i}) {
+      opacity: random(10000) * 0.0001;
+      transform: translate($random-x, -10px) scale($random-scale);
+      animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+    }
+
+    @keyframes fall-#{$i} {
+      #{percentage($random-yoyo-time)} {
+        transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+      }
+
+      to {
+        transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
+      }
+    }
+  }
+}
