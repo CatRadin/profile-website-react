@@ -2,6 +2,7 @@ import './App.scss';
 import Nav from './components/Nav'
 import IntroText from './components/IntroText'
 import About from './components/About'
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function App() {
       </div>
       <div className='middle-container'>
       <About />
+      </div>
+      <div className='projects-container'>
+        <Projects />
       </div>
     </div>
   );
