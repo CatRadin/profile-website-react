@@ -281,7 +281,7 @@ select {
     }
 
     .about {
-  
+  background: whitesmoke;
     }
     
 
@@ -336,10 +336,18 @@ select {
       height: 5%;
     }
 
+    .spanMe {
+      color:#664551;
+    
+    }
+
     // Projects --------------------------------------------------------------
-    .projects {
+    .projects-container {
       width: 100vw;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(-45deg, #100517, #412545, #664551, #030000);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
@@ -357,6 +365,12 @@ select {
 	}
 }
 
+.projects {
+  width: 90vw;
+  height: 90vh;
+  background: white;
+  border-radius: 5rem;
+}
 
   
 
