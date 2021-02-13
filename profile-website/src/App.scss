@@ -248,7 +248,7 @@ select {
     .skills { grid-area: skills; }
 
     .image-container {
-      background: rgb(17, 17, 16);
+      background: #17151b;
       display:flex;
       flex-direction: column;
       align-items: center;
@@ -280,8 +280,13 @@ select {
      margin-top: 10%;
     }
 
+    .about {
+  
+    }
+    
+
     .about h1 {
-      color:rgb(24, 23, 23);
+      color:#211e27;
       padding: 1.3rem;
       font-size: 4rem;
     }
@@ -296,7 +301,7 @@ select {
     }
 
     .skills {
-      background: rgb(26, 26, 24);
+      background: #26222c;
     }
     .skills h1 {
       color: rgb(243, 235, 235);
@@ -335,7 +340,22 @@ select {
     .projects {
       width: 100vw;
       height: 100vh;
+      background: linear-gradient(-45deg, #100517, #412545, #664551, #030000);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
     }
+    
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
   
