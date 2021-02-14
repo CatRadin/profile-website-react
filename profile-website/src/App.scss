@@ -366,10 +366,13 @@ select {
 }
 
 .projects {
-  width: 90vw;
-  height: 90vh;
-  background: white;
-  border-radius: 5rem;
+  width: 80vw;
+  height: 80vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(90, 112, 119, 0.7),
+    rgba(98, 56, 138, 0.3));
+  border-radius: 10rem;
 }
 
   
