@@ -138,6 +138,10 @@ select {
   }
 }
 
+body {
+  background: #17151b;
+}
+
 //NAV-----------------------------------------------------------------------
 .nav-Container{
   display: flex;
@@ -282,18 +286,20 @@ select {
 
     .about {
   background: whitesmoke;
+  background: #26222c;
+  
     }
     
 
     .about h1 {
-      color:#211e27;
+      color: rgb(243, 235, 235);
       padding: 1.3rem;
       font-size: 4rem;
     }
 
     .about p {
       text-align: center;
-      color:rgb(61, 46, 46);
+      color:rgb(172, 163, 163);
       
       padding:3rem;
       font-size: 1.4rem;
@@ -302,6 +308,7 @@ select {
 
     .skills {
       background: #26222c;
+      border-radius: 0rem 0rem 10rem 10rem;
     }
     .skills h1 {
       color: rgb(243, 235, 235);
@@ -330,6 +337,7 @@ select {
       display: flex;
       flex-direction: column;
       align-items: center;
+    
     }
 
     .skillz img {
@@ -337,7 +345,7 @@ select {
     }
 
     .spanMe {
-      color:#664551;
+      color:#725962;
     
     }
 
@@ -348,31 +356,19 @@ select {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(-45deg, #100517, #412545, #664551, #030000);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-    }
-    
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
+      background: #17151b;
 	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 
 .projects {
-  width: 80vw;
-  height: 80vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba(90, 112, 119, 0.7),
-    rgba(98, 56, 138, 0.3));
-  border-radius: 10rem;
+  width: 90vw;
+  height: 90vh;
+  // background: linear-gradient(
+  //   to right bottom,
+  //   rgba(65, 80, 85, 0.7),
+  //   rgba(98, 56, 138, 0.3));
+  // border-radius: 2rem;
+  
 }
 
   
