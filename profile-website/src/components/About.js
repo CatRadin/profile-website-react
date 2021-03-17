@@ -24,16 +24,18 @@ return(
         <ul data-aos="fade-up">
             {/* <div className='skillz'>
                 <img src={HTML} /> */}
+            <li>Java</li>
+            <li>Java Spring</li>
+            <li>Python</li>
             <li>HTML</li>
-            {/* </div> */}
             <li>CSS</li>
             <li>SASS</li>
             <li>JavaScript</li>
             <li>React</li>
             <li>Redux</li>
             <li>JQuery</li>
-            <li>Java</li>
             <li>Git</li>
+            <li>Unit Testing</li>
             <li>Responsive Design</li>
         </ul>
     </div>
