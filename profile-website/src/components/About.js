@@ -15,13 +15,13 @@ return(
         <p data-aos="fade-right">Full Stack Developer</p>
         <img data-aos="fade-right" className="contact-stuff" src="https://i.ibb.co/DVdmnRY/Contact-Details.png" />
         <div className="contact-icons">
-            <a className="icon" href="https://www.linkedin.com/in/catherine-radin-schneider/">
+            <a className="icon" href="https://www.linkedin.com/in/catherine-radin-schneider/" target="_blank">
         <img data-aos="fade-right" className="icon" src="https://img.icons8.com/doodle/48/ffffff/linkedin-circled.png"/>
             </a>
-            <a className="icon" href="https://github.com/CatRadin">
+            <a className="icon" href="https://github.com/CatRadin" target="_blank">
         <img data-aos="fade-right" className="icon" src="https://img.icons8.com/dusk/64/000000/github.png"/>
             </a>
-            <a className="icon" href="https://twitter.com/RadinCatherine">
+            <a className="icon" href="https://twitter.com/RadinCatherine" target="_blank">
         <img data-aos="fade-right" className="icon" src="https://img.icons8.com/dusk/64/ffffff/twitter-circled.png"/>
         </a>
         </div>
