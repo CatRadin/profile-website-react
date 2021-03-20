@@ -354,6 +354,7 @@ body {
       width: 100vw;
       height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background: #17151b;
@@ -371,6 +372,10 @@ body {
   // border-radius: 2rem;
   
   text-align: center;
+  border: 1px solid pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -414,6 +419,17 @@ body {
 @keyframes blinkTextCursor{
   from{border-bottom-color: #a87789;}
   to{border-bottom-color: transparent;}
+}
+
+.project-left {
+  width: 50%;
+  height: 50%;
+  border: 1px solid pink
+}
+.project-right {
+  width: 50%;
+  height: 50%;
+  border: 1px solid pink
 }
 
   
