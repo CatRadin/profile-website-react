@@ -357,6 +357,7 @@ body {
       justify-content: center;
       align-items: center;
       background: #17151b;
+      
 	}
 
 
@@ -369,6 +370,50 @@ body {
   //   rgba(98, 56, 138, 0.3));
   // border-radius: 2rem;
   
+  text-align: center;
+  
+}
+
+.project-title {
+  font-size: 4rem;
+  position: relative; 
+  margin: 0 auto;
+  border-bottom: 2px dashed #a87789;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-20%);  
+}
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.icon {
+  margin: 1rem;
+  transition: all 800ms ease-in-out;
+}
+
+.icon:hover {
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+}
+
+/* Animation */
+.project-title{
+  animation: typewriter 1s steps(44) 1s 1 normal both,
+         blinkTextCursor 1500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-bottom-color: #a87789;}
+  to{border-bottom-color: transparent;}
 }
 
   

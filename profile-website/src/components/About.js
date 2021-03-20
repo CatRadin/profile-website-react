@@ -14,7 +14,19 @@ return(
         <img data-aos="fade-right" className='myName' src="https://i.ibb.co/5xLntwB/Name-Lighter.png" />
         <p data-aos="fade-right">Full Stack Developer</p>
         <img data-aos="fade-right" className="contact-stuff" src="https://i.ibb.co/DVdmnRY/Contact-Details.png" />
+        <div className="contact-icons">
+            <a className="icon" href="https://www.linkedin.com/in/catherine-radin-schneider/">
+        <img data-aos="fade-right" className="icon" src="https://img.icons8.com/doodle/48/ffffff/linkedin-circled.png"/>
+            </a>
+            <a className="icon" href="https://github.com/CatRadin">
+        <img data-aos="fade-right" className="icon" src="https://img.icons8.com/dusk/64/000000/github.png"/>
+            </a>
+            <a className="icon" href="https://twitter.com/RadinCatherine">
+        <img data-aos="fade-right" className="icon" src="https://img.icons8.com/dusk/64/ffffff/twitter-circled.png"/>
+        </a>
+        </div>
     </div>
+    
     <div className="about">
         <h1 data-aos="fade-down">About <span data-aos="fade-down" className='spanMe'>Me:</span> </h1>
         <p data-aos="fade-down">Cupcake ipsum dolor sit amet I love. Bear claw carrot cake cake gingerbread pastry bear claw marshmallow. Marzipan brownie cake I love soufflé pudding lollipop topping. I love tiramisu bonbon. Topping marzipan sweet roll dessert. I love I love candy I love jujubes toffee jujubes chocolate bar bear claw. Tiramisu lemon drops caramels tootsie roll pastry sweet roll halvah donut. Brownie soufflé toffee brownie. I love pudding I love jelly tiramisu gummies marshmallow pastry cotton candy. Halvah chocolate I love jelly beans. Macaroon cake donut cheesecake dragée muffin bonbon icing. I love soufflé lollipop brownie marshmallow muffin jelly beans sweet. Danish toffee sweet danish sesame snaps jelly beans caramels.</p>
@@ -34,6 +46,7 @@ return(
             <li>React</li>
             <li>Redux</li>
             <li>JQuery</li>
+            <li>SQL</li>
             <li>Git</li>
             <li>Unit Testing</li>
             <li>Responsive Design</li>
