@@ -158,7 +158,7 @@ body {
   font-family: 'Actor', sans-serif;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
 }
 .nav-Container a:hover{
   color:#e68387;
@@ -397,10 +397,7 @@ body {
 
     .projects {
   width: 90vw;
-  background: linear-gradient(
-    to right bottom,
-    rgba(65, 80, 85, 0.7),
-    rgba(98, 56, 138, 0.3));
+  
   border-radius: 2rem;
   
   text-align: center;
@@ -433,6 +430,8 @@ body {
   background: #26222c;
   display: flex;
   flex: row;
+  // justify-content: center;
+  // align-items: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
   border-radius: 4rem;
@@ -447,14 +446,25 @@ body {
   width: 50%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   
-  
+}
+.languages-used {
+
+  font-size: 1.1rem;
+  font-family: "Courier New", sans-serif;
+  margin-bottom: -1rem;
+  }
+
+.project-about-p {
+  width: 80%;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  align-self: center;
+
 }
 
-.p-left-content p {
-  margin-top: 2rem;
-}
+
 
 
 
@@ -465,23 +475,29 @@ body {
   border-radius: 1rem;
   transition: transform .2s;
   position: relative;
-  filter: drop-shadow(0 0 0.65rem crimson);
+  
 }
 .project-img:hover{
 opacity: 1;
 transform: scale(1.05);
+filter: drop-shadow(0 0 0.85rem crimson);
 }
 
 
 
 .left-title{
   margin-top: 1rem;
-  // margin-left: -4rem;
-  font-size: 4rem;
-  background-color: #26222c;
-  padding: 0.5rem;
-  // position: absolute;
-  border-radius: 0rem 4rem 4rem 0rem;
+  font-size: 5rem;
+  
+  // background: linear-gradient(
+  //   to right bottom,
+  //   rgba(65, 80, 85, 0.7),
+  //   rgba(98, 56, 138, 0.3));
+  // border-radius: 2rem;
+  align-self: center;
+  font-family: 'Actor', sans-serif;
+  letter-spacing: 0.2rem;
+  
 }
 
 .left-purple-title-bar {
@@ -491,11 +507,11 @@ background: #26222c;
 }
 .left-buttons{
   margin-top: 2rem;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 .left-buttons a {
-  color:rgb(204, 196, 196);
+  color:rgb(250, 246, 246);
   font-weight: bold;
   text-decoration: none;
   font-size: 2rem;
@@ -506,18 +522,36 @@ background: #26222c;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   border-radius: 0.5rem;
+  // background: linear-gradient(
+  //   to right bottom,
+  //   rgba(65, 80, 85, 0.7),
+  //   rgba(98, 56, 138, 0.3));
+  border: 2px solid #a87789;
+  border-radius: 1rem;
 }
 .left-buttons a:hover{
-  color: #a87789;
+  color: #e0afc1;
 }
-
+//RIGHT -------------------
 .project-right {
   width: 90%;
   height: 90%;
+  background: #26222c;
   display: flex;
   flex: row;
+  // justify-content: center;
+  // align-items: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  border-radius: 4rem;
+}
+
+.nasa-img:hover {
+  filter: drop-shadow(0 0 0.85rem rgb(114, 52, 133));
+}
+
+.nasa-title {
+  font-size: 4rem;
 }
 
 
@@ -527,12 +561,8 @@ background: #26222c;
 {
   margin-top:15rem;
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   background: #26222c;
-  border-radius: 10rem 10rem 0rem 0rem;
-
-}
   
 
-
-   
+}
