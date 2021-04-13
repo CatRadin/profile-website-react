@@ -1,15 +1,18 @@
 import './App.scss';
+import React, {useState} from "react";
 import Nav from './components/Nav'
 import IntroText from './components/IntroText'
 import About from './components/About'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Contact from "./components/Contact"
 
 function App() {
 let light = "-light"
 let dark = "-dark"
 
 let backgroundPic = "-dark";
+const [isLight, setIsLight] = useState()
 
 
 
@@ -86,6 +89,7 @@ let toggleBackground = () => {
       <div className='projects-container'>
         <Projects />
       </div>
+      <Contact />
       <Footer />
     </div>
   );
