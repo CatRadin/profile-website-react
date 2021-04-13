@@ -27,7 +27,7 @@ return(
     </div>
     <div className ='p-left-content'>
       <h1 className="left-title">Random Pokemon</h1>
-       <p className='languages-used'> | Redux |  React | CSS | HTML | JavaScript | API | 
+       <p className='languages-used'> | Redux | React | CSS | HTML | JavaScript | API | 
        </p>
        <p className='project-about-p'> I used the pokemon API to grab a random pokemon then fetched the returned URL to find it's name and type! I then displayed them for the user. </p>
       <div className='left-buttons'>
@@ -46,9 +46,9 @@ return(
 <div data-aos="fade-right" className="project-right">
     <div className ='p-left-content'>
       <h1 className="left-title nasa-title">Nasa Photo of the Day</h1>
-       <p className='languages-used'> | React |  JavaScript | CSS | JavaScript | API | 
+       <p className='languages-used'> | React | JavaScript | CSS | JavaScript | API | 
        </p>
-       <p className='project-about-p'> I used the pokemon API to grab a random pokemon then fetched the returned URL to find it's name and type! I then displayed them for the user. </p>
+       <p className='project-about-p'> I used the nasa API to grab their photo of the day. Along with the iformation about the image. </p>
       <div className='left-buttons'>
       <a className='left-links' href="https://github.com/CatRadin/space-picture-of-day" 
         target="_blank">Github</a>

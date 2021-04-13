@@ -8,7 +8,7 @@ return(
         <a href="#">Resume</a>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
-    </div>
+        </div>
 )
 }
 export default Nav
