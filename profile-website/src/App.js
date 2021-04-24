@@ -8,20 +8,17 @@ import Footer from './components/Footer'
 import Contact from "./components/Contact"
 
 function App() {
-let light = "-light"
-let dark = "-dark"
-
-let backgroundPic = "-dark";
-const [isLight, setIsLight] = useState()
+//State -------------------------------------------------------------
+const [backgroundPic, setBackgroundPic] = useState("-dark")
 
 
-
+//On Click Toggle ---------------------------------------------------
 let toggleBackground = () => {
   if (backgroundPic === "-dark") {
-    backgroundPic = "-light";
+    setBackgroundPic("-light")
     console.log("-light")
   } else {
-    backgroundPic = "-dark"
+    setBackgroundPic("-dark") 
     console.log("-dark")
   }
 }
@@ -80,7 +77,7 @@ let toggleBackground = () => {
 <div class="snow"></div>
 <div class="snow"></div>
 <Nav />
-{/* <button onClick={toggleBackground}>test</button> */}
+<button onClick={toggleBackground}>test</button>
 <IntroText />
       </div>
       <div className='middle-container'>

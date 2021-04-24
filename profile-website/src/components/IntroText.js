@@ -9,7 +9,7 @@ return(
 <div class="please-work">
     
     
-    <p>I'm a Mississippi based Full Stack Developer. Creating scalable web applications and discovering innovative solutions is where my passion lies.
+    <p>I'm a Mississippi based Full Stack Developer. Creating responsive web applications and discovering innovative solutions is where my passion lies.
     Scroll to learn more about me!</p></div>
 
     
