@@ -77,8 +77,8 @@ let toggleBackground = () => {
 <div class="snow"></div>
 <div class="snow"></div>
 <Nav />
-<button onClick={toggleBackground}>test</button>
 <IntroText />
+{/* <button onClick={toggleBackground}>test</button> */}
       </div>
       <div className='middle-container'>
       <About />
