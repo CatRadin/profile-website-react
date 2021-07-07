@@ -50,6 +50,8 @@ return(
             <li>Git</li>
             <li>Unit Testing</li>
             <li>Responsive Design</li>
+            <li>Figma</li>
+            <li>Photoshop</li>
         </ul>
     </div>
   </div>
