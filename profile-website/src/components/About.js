@@ -51,6 +51,7 @@ return(
             <li>Unit Testing</li>
             <li>Responsive Design</li>
             <li>Figma</li>
+            <li>Adobe XD</li>
             <li>Photoshop</li>
         </ul>
     </div>
