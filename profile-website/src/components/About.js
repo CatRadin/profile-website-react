@@ -29,10 +29,11 @@ return(
     
     <div className="about">
         <h1 data-aos="fade-down">About <span data-aos="fade-down" className='spanMe'>Me:</span> </h1>
-        <p data-aos="fade-down"> Update coming. Cupcake ipsum dolor sit amet I love. Bear claw carrot cake cake gingerbread pastry bear claw marshmallow. Marzipan brownie cake I love soufflé pudding lollipop topping. I love tiramisu bonbon. Topping marzipan sweet roll dessert. I love I love candy I love jujubes toffee jujubes chocolate bar bear claw. Tiramisu lemon drops caramels tootsie roll pastry sweet roll halvah donut. Brownie soufflé toffee brownie. I love pudding I love jelly tiramisu gummies marshmallow pastry cotton candy. Halvah chocolate I love jelly beans. Macaroon cake donut cheesecake dragée muffin bonbon icing. I love soufflé lollipop brownie marshmallow muffin jelly beans sweet. Danish toffee sweet danish sesame snaps jelly beans caramels.</p>
+        <p data-aos="fade-down"> I am a former designer turned Full Stack Web Developer. I spent six years working from home making designs for T-shirts to sell on Amazon and Etsy. But, ever since I was a teenager, I have had a fascination with the web. I played around with combing my background in design with my passion for tech.  I took a leap and enrolled in the Full Stack Web Development class at Lambda School in November 2020. Here I gained the knowledge to pursue my dream. When I'm not coding, you can find me enjoying a good book, playing video games, or tending to my garden. </p>
     </div>
     <div class="skills">
         <h1 data-aos="fade-up">Skills: </h1>
+        <img data-aos="fade-up" className='pink-bar' src="https://i.ibb.co/rtMV6Qx/Pink-bar.png"></img>
         <ul data-aos="fade-up">
                     {/* Java */}
             <li><svg viewBox="0 0 128 128">
