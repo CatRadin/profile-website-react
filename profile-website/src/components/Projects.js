@@ -27,7 +27,7 @@ return(
       <h1 className="left-title nasa-title">Human Rights First</h1>
        <p className='languages-used'> JavaScript | React | Less | Ant Design | Node.js | PostgreSQL | Figma 
        </p>
-       <p className='project-about-p'>I collaborated remotely with a team of 9 Web Developers, 2 UX/UI Lead Designers and 3 Data Scientists to build and add new features to this web application in one month.</p>
+       <p className='project-about-p'>I collaborated remotely with a team of Web Developers,  UX/UI Lead Designers and Data Scientists to add new features to this application.</p>
       <div className='left-buttons'>
       <a className='left-links' href="https://github.com/CatRadin/human-rights-first-asylum-fe-a" 
         target="_blank">Repo</a>
@@ -36,7 +36,7 @@ return(
       </div>
     </div>
     <div className='p-left-image'>
-    <img className="project-img" src="https://i.ibb.co/m0hW3ZT/Human-Rights-First-Asylum.png"></img>
+    <img className="project-img HRF" src="https://i.ibb.co/m0hW3ZT/Human-Rights-First-Asylum.png"></img>
     </div>
 </div>
 
