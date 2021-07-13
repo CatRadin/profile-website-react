@@ -21,6 +21,26 @@ return(
     <div clssName='title-container'>
   <h1 data-aos="fade-right" className="project-title">Projects</h1>
   </div>
+
+  <div data-aos="fade-right" className="project-right">
+    <div className ='p-left-content'>
+      <h1 className="left-title nasa-title">Human Rights First</h1>
+       <p className='languages-used'> JavaScript | React | Less | Ant Design | Node.js | PostgreSQL | Figma 
+       </p>
+       <p className='project-about-p'>I collaborated remotely with a team of 9 Web Developers, 2 UX/UI Lead Designers and 3 Data Scientists to build and add new features to this web application in one month.</p>
+      <div className='left-buttons'>
+      <a className='left-links' href="https://github.com/CatRadin/human-rights-first-asylum-fe-a" 
+        target="_blank">Repo</a>
+        <a className='left-links' href="https://a.humanrightsfirstasylum.dev/login" 
+        target="_blank">Site</a>
+      </div>
+    </div>
+    <div className='p-left-image'>
+    <img className="project-img" src="https://i.ibb.co/m0hW3ZT/Human-Rights-First-Asylum.png"></img>
+    </div>
+</div>
+
+
   <div data-aos="fade-left" className="project-left">
     <div className='p-left-image'>
     <img className="project-img" src="https://i.ibb.co/ZLFk69C/randompokemon.png"></img>
@@ -38,10 +58,11 @@ return(
       </div>
     </div>
   </div>
-<div className='divider'>|</div>
-<div className='divider'>|</div>
-<div className='divider'>|</div>
-<div className='divider'>|</div>
+
+{/* <div className='divider'></div>
+<div className='divider'></div>
+<div className='divider'></div>
+<div className='divider'></div> */}
 
 <div data-aos="fade-right" className="project-right">
     <div className ='p-left-content'>
@@ -60,6 +81,7 @@ return(
     <img className="project-img nasa-img" src="https://i.ibb.co/C8HtqGk/Nasa-Photo-Of-The-Day.png"></img>
     </div>
 </div>
+
   </div>
   </>
 
