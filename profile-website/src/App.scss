@@ -215,6 +215,7 @@ body {
 }
 
 .nav-Container a:after{
+  font-family: 'Poppins', sans-serif;
   border-bottom: 5px solid #e68387;
     content: "";
     display: block;
@@ -390,7 +391,7 @@ body {
 
     .skills {
       background: #26222c;
-      border-radius: 0rem 0rem 10rem 10rem;
+      border-radius: 0rem 0rem 0rem 10rem;
       margin-top: -3rem;
     }
     .skills h1 {
@@ -471,6 +472,61 @@ body {
     }
 
 // Projects --------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+
+.text-container{
+  color: #26222c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 10rem;
+  margin: 5rem;
+  margin-top: -0.5rem;
+  
+}
+
+.text-container > span {
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #a37485;
+    text-shadow: 0 0 10px #a37485, 0 0 50px #a37485, 0 0 100px #ec8ae7;
+  }
+  
+  10%, 90% {
+    color: #2a2730;
+    text-shadow: none;
+  }
+}
+
+.text-container > span:nth-child(2) {
+	animation-delay: 0.25s;
+}
+
+.text-container > span:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+.text-container > span:nth-child(4) {
+	animation-delay: 0.75s;
+}
+
+.text-container > span:nth-child(5) {
+	animation-delay: 1s;
+}
+
+.text-container > span:nth-child(6) {
+	animation-delay: 1.25s;
+}
+
+.text-container > span:nth-child(7) {
+	animation-delay: 1.5s;
+}
+
     .projects-container {
       width: 100vw;
       margin-top: 3rem;
@@ -482,13 +538,11 @@ body {
       
 	}
 
-    .projects {
-  width: 85vw;
-  
-  border-radius: 2rem;
-  
+  .projects {
+  width: 100vw;
+  // border-radius: 2rem;
   text-align: center;
-  
+  background-color: #26222c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -511,25 +565,14 @@ body {
 }
 
 
-.project-left {
-  width: 90%;
-  height: 90%;
-  background: #26222c;
-  display: flex;
-  flex: row;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  border-radius: 4rem;
-}
+
 .p-left-image{
   width: 50%;
   height: 100%;
-  
 }
 
 .p-left-content {
   width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column; 
   
@@ -550,18 +593,13 @@ body {
 }
 
 
-
-
-
-
 .project-img {
   width: 100%;
+  background-color: #17151b;
   border-radius: 1rem;
   transition: transform .2s;
   position: relative;
-  
-  
-  
+   
 }
 .project-img:hover{
 opacity: 1;
@@ -593,18 +631,17 @@ background: #26222c;
 }
 .left-buttons{
   margin-top: 2rem;
-  // display: flex;
-  // justify-content: center;
+  
 }
 .left-buttons a {
-  color:rgb(250, 246, 246);
+  color: #FFF;
   font-weight: bold;
   text-decoration: none;
   font-size: 2rem;
-  background: #26222c;
+  // background: #26222c;
   padding: 1rem;
   margin: 1rem;
-  font-family: 'Actor', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   border-radius: 0.5rem;
@@ -612,25 +649,80 @@ background: #26222c;
   //   to right bottom,
   //   rgba(65, 80, 85, 0.7),
   //   rgba(98, 56, 138, 0.3));
-  border: 2px solid #a87789;
-  border-radius: 1rem;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
-.left-buttons a:hover{
-  color: #e0afc1;
+
+.left-buttons :hover {
+  color: #a37485;
+}
+
+.left-buttons :before,
+.left-buttons :after {
+  width:0;
+  content: "";
+  bottom: -10px;
+  background: #a37485;
+  height:1rem;
+  position: absolute;
+  
+  -webkit-transition: width .6s ease;
+  -moz-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+.left-buttons :before {
+  right: 40%;
+}
+.left-buttons :after {
+  left: 40%;
+}
+.left-buttons :hover:before,
+.left-buttons :hover:after {
+  width: 40%;
+}
+
+
+
+
+.project-left {
+  width: 85%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex: row;
+  
+  background-color: #17151b;
+  padding: 3rem;
+  // border-radius: 1rem 2rem 15rem 1rem;
+  
+}
+.pink-bar-projects{
+align-self: center;
+margin-bottom: 1rem ;
+width: 30rem;
+height: 0.4rem;
+border-radius: 1rem;
 }
 //RIGHT -------------------
 .project-right {
-  width: 90%;
+  width: 85%;
   height: 90%;
-  background: #26222c;
+  // background: #17151b;
+  padding: 3rem;
   display: flex;
   flex: row;
   // justify-content: center;
   // align-items: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  border-radius: 4rem;
+  
+  background-color: #17151b;
+  padding: 3rem;
+  // border-radius: 0rem 0rem 1rem 15rem;
 }
+
+
 
 
 
@@ -655,7 +747,10 @@ background: #26222c;
 }
 
 //Contact ------------------------------------------------------
-
+.contact-container{
+  width: 100vw;
+  
+}
 .wrap {
   margin: 40px auto;
   position: relative;

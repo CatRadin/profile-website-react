@@ -2,6 +2,8 @@ import React from 'react'
 
 function Contact() {
 
+  
+
 return(
     <div class="contact-container" id="Contact">
       
