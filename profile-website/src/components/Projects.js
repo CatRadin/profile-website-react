@@ -17,7 +17,7 @@ function Projects() {
 return(
   <>
   
-  <div class="projects">
+  <div class="projects" id="projects">
     <div clssName='title-container'>
   <h1 data-aos="fade-right" className="project-title">Projects</h1>
   </div>

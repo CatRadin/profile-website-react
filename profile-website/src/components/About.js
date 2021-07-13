@@ -8,7 +8,7 @@ function About() {
     },[])
 
 return(
-    <div className="grid-container">
+    <div className="grid-container" Id="About">
     <div className="image-container">
         <img data-aos="fade-right" className="me" src='https://i.ibb.co/jv4g6zK/blackandwhiteme.png' />
         <img data-aos="fade-right" className='myName' src="https://i.ibb.co/5xLntwB/Name-Lighter.png" />
