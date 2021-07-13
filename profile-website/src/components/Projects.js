@@ -22,15 +22,15 @@ return(
   <h1 data-aos="fade-right" className="project-title">Projects</h1>
   </div>
 
-  <div data-aos="fade-right" className="project-right">
+  <div data-aos="fade-right" className="project-right HRF-right">
     <div className ='p-left-content'>
       <h1 className="left-title nasa-title">Human Rights First</h1>
        <p className='languages-used'> JavaScript | React | Less | Ant Design | Node.js | PostgreSQL | Figma 
        </p>
-       <p className='project-about-p'>I collaborated remotely with a team of Web Developers,  UX/UI Lead Designers and Data Scientists to add new features to this application.</p>
+       <p className='project-about-p'>I collaborated remotely with a team of Web Developers, UX/UI Lead Designers and Data Scientists to add new features.</p>
       <div className='left-buttons'>
       <a className='left-links' href="https://github.com/CatRadin/human-rights-first-asylum-fe-a" 
-        target="_blank">Repo</a>
+        target="_blank">Github</a> 
         <a className='left-links' href="https://a.humanrightsfirstasylum.dev/login" 
         target="_blank">Site</a>
       </div>

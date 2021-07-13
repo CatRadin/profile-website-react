@@ -78,11 +78,12 @@ select {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  display: none;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #26222c;
 }
 
 /* Handle */
@@ -96,6 +97,7 @@ select {
 }
 
 .App {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,7 +107,7 @@ select {
   
 }
 .header-container-dark {
-  width: 100vw;
+  
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -126,7 +128,9 @@ select {
   background-position: center center;
 }
 //Toggle ------------------------------------------------------------------------------
-
+body {
+  overflow: auto;
+}
 
 
 
@@ -174,30 +178,54 @@ select {
   }
 }
 
+
+
+
+
+
 body {
   background: #17151b;
 }
 
 //NAV-----------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 .nav-Container{
   display: flex;
   flex-direction: row;
   align-self: center;
+  justify-content: center;
+  width: 100vw;
+  height: 6rem;
 }
 
 .nav-Container a {
-  color: hsl(192, 17%, 99%);
+  color: hsl(180, 15%, 90%);
   text-decoration: none;
   font-size: 2rem;
   margin-top: -4rem;
   padding: 6rem;
-  font-family: 'Actor', sans-serif;
-  letter-spacing: 0.4rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   margin-bottom: 20vh;
+  
 }
-.nav-Container a:hover{
-  color:#e68387;
+
+.nav-Container a:after{
+  border-bottom: 5px solid #e68387;
+    content: "";
+    display: block;
+    margin: 0.25em auto 0;
+    transition: width 250ms ease-in-out 0s;
+    width: 0;
+}
+
+.nav-Container a:hover:after {
+  transition: width 100ms ease-in-out 0s;
+  width: 100%;
 }
 //IntroText------------------------------------------------------
   .header-middle-contaier {
@@ -205,12 +233,14 @@ body {
     flex-direction: column;
     text-align: center;
     align-self: center;
-    width: 60%;
+    margin-top: 15rem;
+    width: 80%;
    
   }
   
   .header-middle-contaier h2 {
     font-size: 2rem;
+    color: hsl(180, 15%, 90%);
     letter-spacing: 5px;
     font-family: "Courier New", sans-serif;
     font-weight: normal;
@@ -247,7 +277,7 @@ body {
     }
   
     .header-middle-contaier h1 {
-    font-size: 6.5rem;
+    font-size: 8.5rem;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: normal;
     letter-spacing: 5px;
@@ -258,15 +288,26 @@ body {
   }
   
   .header-middle-contaier h1 .cat {
-    font-size: 9.5rem;
+    font-size: 12rem;
     font-weight: 600;
     
   }
   
   .header-middle-contaier p {
+    align-self: center;
     font-size: 1.3rem;
     font-weight: 300;
     }
+
+    .please-work {
+      align-self: center;
+      align-items: center;
+      width: 60%;
+    }
+.last-name {
+  margin-top: 1rem;
+}
+  
 
     //GRID ABOUT SECTION-------------------------------------------------------------------------
   
@@ -442,7 +483,7 @@ body {
 	}
 
     .projects {
-  width: 90vw;
+  width: 85vw;
   
   border-radius: 2rem;
   
@@ -476,8 +517,6 @@ body {
   background: #26222c;
   display: flex;
   flex: row;
-  // justify-content: center;
-  // align-items: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
   border-radius: 4rem;
@@ -517,7 +556,6 @@ body {
 
 .project-img {
   width: 100%;
-  // opacity: 0.7;
   border-radius: 1rem;
   transition: transform .2s;
   position: relative;
@@ -592,6 +630,15 @@ background: #26222c;
   margin-bottom: 1rem;
   margin-top: 1rem;
   border-radius: 4rem;
+}
+
+
+
+.HRF {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform .2s;
+  position: relative;
 }
 
 .nasa-img:hover {
