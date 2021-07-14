@@ -66,7 +66,7 @@ return(
        <p className='languages-used'> | Redux | React | CSS | HTML | JavaScript | API | 
        </p>
        <p className='project-about-p'> I used the pokemon API to grab a random pokemon then fetched the returned URL to find it's name and type! I then displayed them for the user. </p>
-      <div className='left-buttons'>
+      <div className='left-buttons pokemonBtn'>
       <a className='left-links' href="https://github.com/CatRadin/React-Redux-App/tree/catherine-radin" 
         target="_blank">Github</a>
         <a className='left-links' href="https://random-pokemon.netlify.app/" 
