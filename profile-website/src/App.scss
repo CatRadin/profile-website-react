@@ -315,7 +315,7 @@ body {
     .grid-container {
       display: grid;
       grid-template-columns: 0.4fr 0.4fr 1fr 1fr ;
-      grid-template-rows: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr 1.3fr ;
       gap: 0px 0px;
       grid-template-areas:
         "image-container image-container about about"
@@ -386,13 +386,14 @@ body {
       
       padding:3rem;
       font-size: 1.4rem;
-      margin-top: -1rem;
+      margin-top: -rem;
     }
 
     .skills {
       background: #26222c;
+      overflow: auto;
       border-radius: 0rem 0rem 0rem 10rem;
-      margin-top: -3rem;
+      
     }
     .skills h1 {
       color: rgb(243, 235, 235);
@@ -470,6 +471,76 @@ body {
       from{border-bottom-color: #a87789;}
       to{border-bottom-color: transparent;}
     }
+
+    //Hover Effects ---------------
+
+    // variables
+$tip-distance: 24px;
+$tip-triangle-width: 6px;
+$tip-color-fallback: #17151b;
+$tip-color: #17151b;
+// style the tooltip anchor
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+    &:after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: $tip-distance;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      left: -10px;
+      min-width: 100px;
+      max-width: 300px;
+      padding: 5px 7px 5px 10px;
+      pointer-events: none;
+      font-size: .75em;
+      background-color: $tip-color-fallback;
+      background-color: $tip-color;
+      color: #999;
+      border-radius: 2px;
+    }
+    &:before,  
+    &:after {
+      display: block;
+      visibility: hidden; // because opacity:0 is not enough for IE8
+      opacity: 0;  
+      transition: opacity 0.2s ease-out, margin 0.2s ease-out;
+    }
+    &:hover {
+      color: #999;
+      &:before,  
+      &:after {
+        opacity: 1;
+        margin-bottom: 3px;
+        visibility: visible;
+      }
+    }
+}
+
+.tooltip-bottom {
+  &:after {
+    top: $tip-distance;
+  }
+  &:before {
+    top: $tip-distance - $tip-triangle-width;
+    border-top: 0;
+    border-left: $tip-triangle-width solid transparent;
+    border-right: $tip-triangle-width solid transparent;
+    border-bottom: $tip-triangle-width solid $tip-color-fallback; // IE8 fallback
+    border-bottom: $tip-triangle-width solid $tip-color;
+  }
+  &:hover {
+    &:before,  
+    &:after {
+      bottom: auto;
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
+  }
+}
 
 // Projects --------------------------------------------------------------
 
