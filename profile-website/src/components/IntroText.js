@@ -9,7 +9,7 @@ return(
     <h1 className ='last-name'><span>Radin-Schneider</span></h1>
 <div class="please-work">
     
-    <p>I'm a Mississippi based Developer. Creating innovative ui/ux designs and web applications is where my passion lies.
+    <p>Creating innovative, responsive UI/UX designs and coding web applications is where my passion lies.
     Scroll to learn more!</p>
     </div>
 

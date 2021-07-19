@@ -1158,6 +1158,10 @@ width: 100%;
 
     .header-container-dark{
       height: auto;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
 
     .header-middle-contaier{
