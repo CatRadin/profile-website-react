@@ -934,11 +934,10 @@ border-radius: 1rem;
 /* (1680x1050) WSXGA+ Display */
 @media  screen and (max-width: 1680px) {
 
-  .header-middle-contaier{
+  .header-middle-contaier
+  {
+  
     margin-top: 14rem;
     width: 90%;
-  }
-  .header-middle-contaier h1 {
-    
   }
 }
