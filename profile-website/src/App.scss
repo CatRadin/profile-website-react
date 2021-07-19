@@ -115,11 +115,12 @@ select {
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;
+  background-attachment: fixed;
+  
 }
 
 .header-container-light {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background: url("https://i.ibb.co/BTvqQhP/rich-martello-ti4p-Ygf-Dmis-unsplash.jpg");
@@ -246,7 +247,7 @@ body {
     font-family: "Courier New", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
-    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
     animation: fadeIn ease 6s;
     animation-iteration-count: 1;
     -webkit-animation: fadeIn ease 6s;
@@ -279,7 +280,7 @@ body {
   
     .header-middle-contaier h1 {
     font-size: 8.5rem;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -289,6 +290,7 @@ body {
   }
   
   .header-middle-contaier h1 .cat {
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 12rem;
     font-weight: 600;
     
@@ -298,6 +300,7 @@ body {
     align-self: center;
     font-size: 1.3rem;
     font-weight: 300;
+    margin-top: 1rem;
     }
 
     .please-work {
@@ -322,7 +325,7 @@ body {
         "image-container image-container about about "
         "image-container image-container skills skills"
         "image-container image-container skills skills";
-        height: 100vh;
+        height: auto;
         width: 100vw;
     }
     .image-container { grid-area: image-container; }
@@ -337,21 +340,22 @@ body {
     }
 
     .me {
-     height: 35%;
-     margin-top: 5%;
-      
+     height: auto;
+     width: 80%;
+     object-fit: cover;
+     margin-top: 1rem; 
     }
 
     .myName {
-      height: 17%;
+      height: auto;
+      width: 90%;
       margin-top: 5%;
+      object-fit: cover;
       
-      
-    
     }
 
     .image-container p {
-      margin-top: 10%;
+      margin-top: 5%;
       font-size: 1.3rem;
       letter-spacing: 5px;
       font-family: "Courier New", sans-serif;
@@ -360,13 +364,14 @@ body {
     }
 
     .contact-stuff {
-     height: 6.5%;
-     margin-top: 10%;
+      height: auto;
+      width: 90%;
+     margin-top: 5%;
     }
 
     .about {
-  background: whitesmoke;
-  background: #26222c;
+    background: whitesmoke;
+    background: #26222c;
   
     }
     
@@ -381,12 +386,10 @@ body {
     }
 
     .about p {
-      text-align: center;
+      text-align: left;
       color:rgb(172, 163, 163);
-      
-      padding:3rem;
+      padding-left: 2rem;
       font-size: 1.4rem;
-      margin-top: -rem;
     }
 
     .skills {
@@ -399,17 +402,14 @@ body {
       color: rgb(243, 235, 235);
       padding: 1.3rem;
       font-size: 4rem;
+      
     }
 
     .skills ul {
-      
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
-      list-style-type: none;
-      
-      
-      
+      list-style-type: none; 
     }
 
     .skills ul li {
@@ -437,7 +437,8 @@ body {
     .pink-bar {
       margin-top: -2rem;
       margin-left: 4.8rem;
-      width: 8%;
+      width: 9%;
+      height: 1%;
     }
 
     .contact-icons {
@@ -729,26 +730,10 @@ background: #26222c;
 
 .left-buttons a:before,
 .left-buttons a:after {
-  width:0;
-  content: "";
-  bottom: 1rem;
-  background: #a37485;
-  height:1rem;
-  position: absolute;
   -webkit-transition: width .6s ease;
   -moz-transition: width .6s ease;
   -o-transition: width .6s ease;
   transition: width .6s ease;
-}
-.left-buttons a:before {
-  right: 40%;
-}
-.left-buttons a:after {
-  left: 40%;
-}
-.left-buttons a:hover:before,
-.left-buttons a:hover:after {
-  width: 40%;
 }
 
 
@@ -942,4 +927,18 @@ border-radius: 1rem;
 
 .footer-container p {
   font-size: 1rem;
+}
+
+//Media Query
+
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (max-width: 1680px) {
+
+  .header-middle-contaier{
+    margin-top: 14rem;
+    width: 90%;
+  }
+  .header-middle-contaier h1 {
+    
+  }
 }

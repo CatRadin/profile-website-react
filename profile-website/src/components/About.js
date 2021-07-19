@@ -29,10 +29,16 @@ return(
     
     <div className="about">
         <h1 data-aos="fade-down">About <span data-aos="fade-down" className='spanMe'>Me:</span> </h1>
-        <p data-aos="fade-down"> I am a former designer turned Full Stack Web Developer. I spent six years working from home making designs for T-shirts to sell on Amazon and Etsy. But, ever since I was a teenager, I have had a fascination with the web. I played around with combing my background in design with my passion for tech.  I took a leap and enrolled in the Full Stack Web Development class at Lambda School in November 2020. Here I gained the knowledge to pursue my dream. When I'm not coding, you can find me enjoying a good book, playing video games, playing Dungeons & Dragons or tending to my garden. </p>
+        <p data-aos="fade-down"> My fascination with coding started after playing Neopets (a virtual pet website that started in the early 2000s). You could create "pet lookup pages" using HTML and CSS. But life led me in another direction, and I worked for myself designing T-shirts and selling them on Amazon. Although the curiosity always stuck with me and led me to enroll in Lambda School, a top-rated coding bootcamp in 2020. <br /><br />
+
+I was taught by many brilliant instructors during my schooling journey and became a part of a welcoming tech community. I learned HTML, CSS, and JavaScript, then moved onto React.js. I learned how to managed state with Redux and style components using Sass and Less. I opted to learn Java for my backend schooling then learned Python.<br /><br />
+
+Post-graduation, I am a software engineer and continue to pursue my passion for coding. I spend my time learning new technologies, sharpening my existing skills. When I'm not coding, you can find me enjoying a good book, playing video games, playing Dungeons & Dragons or tending to my garden. 
+
+</p>
     </div>
     <div class="skills">
-        <h1 data-aos="fade-up">Skills: </h1>
+        <h1 data-aos="fade-up">Skills:</h1>
         <img data-aos="fade-up" className='pink-bar' src="https://i.ibb.co/rtMV6Qx/Pink-bar.png"></img>
         <ul data-aos="fade-up">
                     {/* Java */}
