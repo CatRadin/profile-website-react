@@ -13,7 +13,7 @@ function Nav() {
         <a href="#About">About</a>
         <a href="#projects">Projects</a>
         <a href="#Contact">Contact</a> 
-        <a href="#">Resume</a>
+        <a href="https://drive.google.com/file/d/1u3U_EP6xQQKrD3BdpxrSyNpDs-ASmBdF/view?ths=true" target="_blank">Resume</a>
         </div>
 )
 }
