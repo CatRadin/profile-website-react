@@ -131,9 +131,6 @@ select {
 body {
   overflow: auto;
 }
-
-
-
  //STARS ------------------------------------------------------------------------------
  @function random_range($min, $max) {
   $rand: random();
